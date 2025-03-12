@@ -20,7 +20,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="login-wrap p-0">
               <h3 class="mb-4 text-center">New York News</h3>
-              <form action="#" class="signin-form" onsubmit="return validateForm()">
+              <form id="loginForm" class="signin-form" onsubmit="return validateForm(event)">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Username" id="username" required>
                 </div>
@@ -38,7 +38,8 @@
       </div>
     </section>
     <script>
-      function validateForm() {
+      function validateForm(event) {
+        event.preventDefault();
         var username = document.getElementById('username').value;
         var password = document.getElementById('password-field').value;
         if (username === 'fishygod1234' && password === 'fishylord1234') {
