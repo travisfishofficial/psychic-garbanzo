@@ -15,6 +15,7 @@ body{
   z-index: 0;
   padding: 0;
   overflow: hidden; // Disable scrolling
+  height: 100vh; // Ensure background takes up the whole page
   &:after{
     position: absolute;
     top: 0;
@@ -69,6 +70,7 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 100vh; // Ensure background takes up the whole page
 }
 
 .login-wrap{
